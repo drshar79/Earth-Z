@@ -1,2 +1,1 @@
-# Earth Z
- Project
+print("hello")
