@@ -31,9 +31,14 @@ def downOrWindow():
                         def StareOrweapon():
                                 ans=input()
                                 if ans=="Continue to stare":
-                                        print("You keep staring. A few moments later, the 'man' turns and looks at you, their lifeless eyes leaving you shivering in your spine")  
+                                        clear()
+                                        print("You keep staring. A few moments later, the 'man' turns and looks at you, their lifeless eyes leaving you a shiver down your spine") 
+                                        print("You yelp and leap away from the window. You hear a shrill scream and footsteps getting closer. They're coming to your house!")
+                                elif ans== "Grab a weapon":
+                                        clear()
+                                        print("You picked up a shotgun that was lying in your closet. four shells came with it.")
+                                        print("You run downstairs to your basement and hide behind a couch. You hear faint screams of victims faraway.") 
                         StareOrweapon()
-
         else:
                 print("That isn't one of your choices! Do you want to...")
                 print("Go downstairs")
