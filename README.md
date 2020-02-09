@@ -1,1 +1,0 @@
-print("'Ah... I'm so tired. College really is tough. 'Bill comes home after a long day of medical school, tired out of his wits")
