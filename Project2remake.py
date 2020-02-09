@@ -52,7 +52,6 @@ def frontOrBack():
                 print("You open the front door and go outside. There, you see a zombie eating the flesh of a dead man, their blood spilling on the ground around them.")
                 print("They turn around and look at you, a severed arm in their mouth.")
                 print("You scream and slam the door shut. Your only option is to go out the back door. ")
-                clear()
                 print("You go out the back door, and find a zombie with its back turned to you. It turns around and meets your eye.")
                 print("The zombie dashes over with terrifying speed, and closes its mouth around your neck.")
                 print("'What a depressing way to die,' You say to yourself")
@@ -75,7 +74,11 @@ def RightOrLeft():
                 print("'Oh, I'm sorry.' She says. What's your name? You're the first person i've seen that actually looks normal.")
         elif ans=="Right":
                 print("You go to the house on the right, shotgun in hand, and open the door.")
+                print("A zombie appears in front of you. It turns around and charges at you.")
                 ShootOrWhack()
+        else:
+                Incorrect()
+                RightOrLeft()
                 
 def ShootOrWhack():
         print("Do you...")
@@ -83,11 +86,16 @@ def ShootOrWhack():
         print("Whack it")
         ans=input()
         if ans=="Shoot the zombie":
+                clear()
                 print("You shoot the zombie in the face, and it drops to the floor dead. You now have three shotgun shells left.")
                 print("You start to investigate the house. You find a backpack with medical supplies and an old, rusty book.")
         elif ans== "Whack it":
+                clear()
                 print("You smack the zombie as hard as you can with the butt of your rifle multiple times. You take it down.")
                 print("However, it left a large gash across your chest, and blood flows out.")
+        else:
+                Incorrect()
+                ShootOrWhack()
 def GrabWeaponOrStare():
         clear()
         print("You open you window blinds and look out into the foggy morning.")
@@ -103,8 +111,35 @@ def GrabWeaponOrStare():
                 print("There are two neighboring houses on either side. Do you go to the house on the...")
                 print("Left")
                 print("Right")
-                RightOrleft()
+                RightOrLeft()
         elif ans == "Continue to stare":
-                pass
+                print("You keep staring. A few moments later, the 'man' turns and looks at you, its lifeless eyes leaving you a shiver down your spine") 
+                print("You yelp and leap away from the window. You hear a shrill scream and footsteps getting closer. They're coming to your house!")
+                OpenwindowOrDown()
+        else:
+                Incorrect()
+                GrabWeaponOrStare()
+def OpenwindowOrDown():
+        print("Do you...")
+        print("Open window and escape")
+        print("Go downstairs")
+        ans=input()
+        if ans=="Open window and escape":
+                clear()
+                print("You open your window and jump down the two story house.")
+                print("You land on your ankle with a sickening crack. You can't put weight on it.")
+                print("You notice the zombie is a few yards to your left, but is too preoccupied on the house to notice you.")
+                AttackOrRight()
+def AttackOrRight():
+        print("Do you...")
+        print("Attack the zombie")
+        print("Flee to the house on your right")
+        ans=input()
+        if ans=="Attack the zombie":
+                clear()
+                print("You limp towards the zombie and punch it in the face")
+                print("The zombie is unfazed and grabs your neck")
+                print("You suffocate until all turns black")
+                Begin()
+
 Begin()
-ddsfdf
