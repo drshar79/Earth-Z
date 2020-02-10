@@ -12,8 +12,6 @@ def downOrWindow():
         if ans== "Go downstairs":
                 print("as you make your way downstairs, you notice that all is silent; no cars, no birds chirping, nothing except for the wind blowing against the house")
                 print("'This is strange,'thought"" "+Name,'.')
-<<<<<<< HEAD
-=======
                 print("Do you...")
                 print("Go out the front door")
                 print("Go out the back door")
@@ -35,7 +33,6 @@ def downOrWindow():
                                         print("You picked up a shotgun that was lying in your closet. four shells came with it.")
                                         print("You run downstairs to your basement and hide behind a couch. You hear faint screams of victims faraway.") 
                         StareOrweapon()
->>>>>>> 94fd6781a8e369438898af9ecd4581337d3dde59
         else:
                 print("That isn't one of your choices! Do you want to go downstairs, or look out the window?")
                 downOrWindow()
