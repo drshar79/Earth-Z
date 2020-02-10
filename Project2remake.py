@@ -69,9 +69,9 @@ def Congrats():
         else:
                 Incorrect()
                 Congrats()
-                ans2=input()
-                if ans2=="Restart":
-                        Begin()
+        ans2=input()
+        if ans2=="Restart":
+                Begin()
 def BarricadeOrIgnore():
         print("Suddenly, you hear a bang on the door, and some low growling. the banging gets louder as more and more zombies pile upon each other.")
         print("However, you're almost done with the weapon.")
